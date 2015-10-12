@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pose" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvq-48-Vlz">
+                                <rect key="frame" x="540" y="30" width="40" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kvq-48-Vlz" secondAttribute="height" multiplier="1:2" id="IPh-eN-mYq"/>
+                                    <constraint firstAttribute="width" constant="40" id="XuA-Tw-EB5"/>
+                                </constraints>
+                                <state key="normal" image="poseSit"/>
+                                <connections>
+                                    <action selector="togglePose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wM6-Rh-lfT"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8T-7C-e0V">
+                                <rect key="frame" x="20" y="30" width="32" height="32"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="8kJ-3Y-FWL"/>
+                                    <constraint firstAttribute="width" constant="32" id="mHf-W7-NJP"/>
+                                </constraints>
+                                <state key="normal" image="flash"/>
+                                <connections>
+                                    <action selector="toggleTorch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Yi-J5-VMW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCD-fn-H3j">
+                                <rect key="frame" x="20" y="530" width="50" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Cdx-JW-cb3"/>
+                                    <constraint firstAttribute="width" secondItem="VCD-fn-H3j" secondAttribute="height" multiplier="1:1" id="mp6-b1-XIc"/>
+                                </constraints>
+                                <state key="normal" image="film"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbf-iJ-5ia">
+                                <rect key="frame" x="263" y="505" width="75" height="75"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Qob-VO-V07"/>
+                                    <constraint firstAttribute="width" secondItem="Nbf-iJ-5ia" secondAttribute="height" multiplier="1:1" id="nVe-bF-mHs"/>
+                                </constraints>
+                                <state key="normal" image="picture"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6U2-gO-WV5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kvq-48-Vlz" secondAttribute="trailing" constant="20" id="KgL-Mu-MoB"/>
+                            <constraint firstItem="kvq-48-Vlz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="LrF-fP-mkq"/>
+                            <constraint firstItem="k8T-7C-e0V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="MnQ-4z-RTk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VCD-fn-H3j" secondAttribute="bottom" constant="20" id="N9r-J5-NDf"/>
+                            <constraint firstItem="Nbf-iJ-5ia" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NFm-Uf-fYc"/>
+                            <constraint firstItem="k8T-7C-e0V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="a0F-Cv-Y0S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nbf-iJ-5ia" secondAttribute="bottom" constant="20" id="aIl-4F-lYK"/>
+                            <constraint firstItem="VCD-fn-H3j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="nyQ-qH-DRx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="filmButton" destination="VCD-fn-H3j" id="J8V-fL-zgs"/>
+                        <outlet property="flashButton" destination="k8T-7C-e0V" id="YVM-kg-h6p"/>
+                        <outlet property="poseButton" destination="kvq-48-Vlz" id="6Bb-SA-KvX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="533" y="477"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="film" width="400" height="400"/>
+        <image name="flash" width="512" height="512"/>
+        <image name="picture" width="200" height="200"/>
+        <image name="poseSit" width="100" height="200"/>
+    </resources>
 </document>
