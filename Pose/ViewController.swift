@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import AVKit
 import Foundation
-import Photos
+
 
 class ViewController : UIViewController {
     
@@ -22,6 +22,7 @@ class ViewController : UIViewController {
     var currentPoseStanding : Bool = true
     var character : UIImageView?
     var photoCaptureOutput : AVCaptureStillImageOutput?
+    var rollBadgeCount : UIView?
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -30,6 +31,10 @@ class ViewController : UIViewController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
+    }
+    
+    func updateBadge(){
+        
     }
     
     func showCamera(){
@@ -168,7 +173,7 @@ class ViewController : UIViewController {
                 self.character!.image!.drawInRect(self.character!.frame);
                 finalRender = UIGraphicsGetImageFromCurrentImageContext()
                 UIGraphicsEndImageContext()
-
+                Photo.addPhoto(finalRender)
 //                UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
                 
             })

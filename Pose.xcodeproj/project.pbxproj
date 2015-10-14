@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33770B151BC75BDE00834BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33770B141BC75BDE00834BD8 /* AppDelegate.swift */; };
 		33770B171BC75BDE00834BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33770B161BC75BDE00834BD8 /* ViewController.swift */; };
 		33770B1A1BC75BDE00834BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33770B181BC75BDE00834BD8 /* Main.storyboard */; };
 		33770B1C1BC75BDE00834BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33770B1B1BC75BDE00834BD8 /* Assets.xcassets */; };
 		33770B1F1BC75BDE00834BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33770B1D1BC75BDE00834BD8 /* LaunchScreen.storyboard */; };
 		33E9AEE41BCB75E1007E1758 /* Pose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33E9AEE21BCB75E1007E1758 /* Pose.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
-		33E9AEE71BCB7614007E1758 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9AEE51BCB7614007E1758 /* Photo+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		33E9AEE81BCB7614007E1758 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9AEE61BCB7614007E1758 /* Photo.swift */; settings = {ASSET_TAGS = (); }; };
 		33E9AEEE1BCB7940007E1758 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9AEE91BCB7940007E1758 /* AVFoundation.framework */; };
 		33E9AEEF1BCB7940007E1758 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9AEEA1BCB7940007E1758 /* CoreData.framework */; };
 		33E9AEF01BCB7940007E1758 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9AEEB1BCB7940007E1758 /* CoreFoundation.framework */; };
@@ -63,19 +60,20 @@
 		33E9B10B1BCB82D3007E1758 /* ManuallyMigratingMagicalRecordStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9B0DE1BCB82D3007E1758 /* ManuallyMigratingMagicalRecordStack.m */; settings = {ASSET_TAGS = (); }; };
 		33E9B10C1BCB82D3007E1758 /* SQLiteMagicalRecordStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9B0E01BCB82D3007E1758 /* SQLiteMagicalRecordStack.m */; settings = {ASSET_TAGS = (); }; };
 		33E9B10D1BCB82D3007E1758 /* SQLiteWithSavingContextMagicalRecordStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9B0E21BCB82D3007E1758 /* SQLiteWithSavingContextMagicalRecordStack.m */; settings = {ASSET_TAGS = (); }; };
+		33E9B1151BCDD485007E1758 /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9B1121BCDD485007E1758 /* Photo+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		33E9B1161BCDD485007E1758 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9B1141BCDD485007E1758 /* Photo.m */; settings = {ASSET_TAGS = (); }; };
+		33E9B11A1BCDD6FE007E1758 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9B1181BCDD6FE007E1758 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		33E9B11B1BCDD6FE007E1758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E9B1191BCDD6FE007E1758 /* main.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33770B111BC75BDD00834BD8 /* Pose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pose.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33770B141BC75BDE00834BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33770B161BC75BDE00834BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		33770B191BC75BDE00834BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33770B1B1BC75BDE00834BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33770B1E1BC75BDE00834BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33770B201BC75BDE00834BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E9AEE31BCB75E1007E1758 /* Pose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pose.xcdatamodel; sourceTree = "<group>"; };
-		33E9AEE51BCB7614007E1758 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33E9AEE61BCB7614007E1758 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		33E9AEE91BCB7940007E1758 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		33E9AEEA1BCB7940007E1758 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		33E9AEEB1BCB7940007E1758 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -174,6 +172,14 @@
 		33E9B0E01BCB82D3007E1758 /* SQLiteMagicalRecordStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteMagicalRecordStack.m; sourceTree = "<group>"; };
 		33E9B0E11BCB82D3007E1758 /* SQLiteWithSavingContextMagicalRecordStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteWithSavingContextMagicalRecordStack.h; sourceTree = "<group>"; };
 		33E9B0E21BCB82D3007E1758 /* SQLiteWithSavingContextMagicalRecordStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteWithSavingContextMagicalRecordStack.m; sourceTree = "<group>"; };
+		33E9B1111BCDD485007E1758 /* Photo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		33E9B1121BCDD485007E1758 /* Photo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		33E9B1131BCDD485007E1758 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		33E9B1141BCDD485007E1758 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		33E9B1171BCDD6FE007E1758 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33E9B1181BCDD6FE007E1758 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33E9B1191BCDD6FE007E1758 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33E9B11C1BCDD9C3007E1758 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +221,7 @@
 				33770B1B1BC75BDE00834BD8 /* Assets.xcassets */,
 				33770B181BC75BDE00834BD8 /* Main.storyboard */,
 				33770B161BC75BDE00834BD8 /* ViewController.swift */,
+				33E9B11C1BCDD9C3007E1758 /* Bridge-Header.h */,
 				33E9AEF51BCB7CA7007E1758 /* Model */,
 				33E9AEF61BCB7CBC007E1758 /* Utilities */,
 			);
@@ -236,10 +243,12 @@
 		33E9AEF51BCB7CA7007E1758 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33E9B1111BCDD485007E1758 /* Photo+CoreDataProperties.h */,
+				33E9B1121BCDD485007E1758 /* Photo+CoreDataProperties.m */,
+				33E9B1131BCDD485007E1758 /* Photo.h */,
+				33E9B1141BCDD485007E1758 /* Photo.m */,
 				33E9B07D1BCB82D3007E1758 /* Library */,
 				33E9AEE21BCB75E1007E1758 /* Pose.xcdatamodeld */,
-				33E9AEE51BCB7614007E1758 /* Photo+CoreDataProperties.swift */,
-				33E9AEE61BCB7614007E1758 /* Photo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -248,7 +257,9 @@
 			isa = PBXGroup;
 			children = (
 				33E9AEF31BCB79C9007E1758 /* Pose-PrefixHeader.pch */,
-				33770B141BC75BDE00834BD8 /* AppDelegate.swift */,
+				33E9B1171BCDD6FE007E1758 /* AppDelegate.h */,
+				33E9B1181BCDD6FE007E1758 /* AppDelegate.m */,
+				33E9B1191BCDD6FE007E1758 /* main.m */,
 				33770B1D1BC75BDE00834BD8 /* LaunchScreen.storyboard */,
 				33770B201BC75BDE00834BD8 /* Info.plist */,
 			);
@@ -497,7 +508,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E9B0F61BCB82D3007E1758 /* NSPersistentStoreCoordinator+MagicalAutoMigrations.m in Sources */,
-				33E9AEE81BCB7614007E1758 /* Photo.swift in Sources */,
 				33E9B1091BCB82D3007E1758 /* MagicalRecordStack+Actions.m in Sources */,
 				33E9B1071BCB82D3007E1758 /* ClassicWithBackgroundCoordinatorSQLiteMagicalRecordStack.m in Sources */,
 				33E9B10D1BCB82D3007E1758 /* SQLiteWithSavingContextMagicalRecordStack.m in Sources */,
@@ -509,6 +519,7 @@
 				33E9B0EA1BCB82D3007E1758 /* NSFetchedResultsController+MagicalFetching.m in Sources */,
 				33E9B0FB1BCB82D3007E1758 /* NSDictionary+MagicalRecordAdditions.m in Sources */,
 				33E9B0FD1BCB82D3007E1758 /* MagicalMigrationManager.m in Sources */,
+				33E9B1161BCDD485007E1758 /* Photo.m in Sources */,
 				33E9B0EC1BCB82D3007E1758 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				33E9B1051BCB82D3007E1758 /* AutoMigratingWithSourceAndTargetModelMagicalRecordStack.m in Sources */,
 				33770B171BC75BDE00834BD8 /* ViewController.swift in Sources */,
@@ -516,6 +527,7 @@
 				33E9B0E61BCB82D3007E1758 /* NSNumber+MagicalDataImport.m in Sources */,
 				33E9B0F11BCB82D3007E1758 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				33E9B1011BCB82D3007E1758 /* MagicalRecord+VersionInformation.m in Sources */,
+				33E9B11A1BCDD6FE007E1758 /* AppDelegate.m in Sources */,
 				33E9B0F81BCB82D3007E1758 /* NSPersistentStoreCoordinator+MagicalManualMigrations.m in Sources */,
 				33E9B1001BCB82D3007E1758 /* MagicalRecord+Setup.m in Sources */,
 				33E9B0FC1BCB82D3007E1758 /* NSError+MagicalRecordErrorHandling.m in Sources */,
@@ -531,14 +543,14 @@
 				33E9B0E91BCB82D3007E1758 /* NSString+MagicalDataImport.m in Sources */,
 				33E9B0F21BCB82D3007E1758 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				33E9B0FA1BCB82D3007E1758 /* NSArray+MagicalRecord.m in Sources */,
-				33770B151BC75BDE00834BD8 /* AppDelegate.swift in Sources */,
 				33E9B0F01BCB82D3007E1758 /* NSManagedObject+MagicalRequests.m in Sources */,
 				33E9B0F51BCB82D3007E1758 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				33E9B1041BCB82D3007E1758 /* AutoMigratingMagicalRecordStack.m in Sources */,
+				33E9B11B1BCDD6FE007E1758 /* main.m in Sources */,
 				33E9B1061BCB82D3007E1758 /* ClassicSQLiteMagicalRecordStack.m in Sources */,
+				33E9B1151BCDD485007E1758 /* Photo+CoreDataProperties.m in Sources */,
 				33E9B10B1BCB82D3007E1758 /* ManuallyMigratingMagicalRecordStack.m in Sources */,
 				33E9AEE41BCB75E1007E1758 /* Pose.xcdatamodeld in Sources */,
-				33E9AEE71BCB7614007E1758 /* Photo+CoreDataProperties.swift in Sources */,
 				33E9B0E31BCB82D3007E1758 /* MagicalImportFunctions.m in Sources */,
 				33E9B0E41BCB82D3007E1758 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				33E9B0E71BCB82D3007E1758 /* NSObject+MagicalDataImport.m in Sources */,
@@ -662,6 +674,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.crusoeventures.Pose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b5b791f8-c750-44af-a619-3ffa8e533d25";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Pose/Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -677,6 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.crusoeventures.Pose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b5b791f8-c750-44af-a619-3ffa8e533d25";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Pose/Bridge-Header.h";
 			};
 			name = Release;
 		};
