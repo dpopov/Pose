@@ -100,7 +100,7 @@ class ViewController : UIViewController {
         character!.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds))
         character?.userInteractionEnabled = true
         character!.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: Selector("handPan:")))
-        character!.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: Selector("handZoom:")))
+        self.view.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: Selector("handZoom:")))
         self.view.insertSubview(character!, belowSubview:poseButton)
     }
     
